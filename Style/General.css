@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+html {
+  height: -webkit-fill-available;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100svh;
+  height: -webkit-fill-available;
+  width: 100svw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8c0080), to(#ff0080fb)), url('/Icons/Currency wallpaper.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 8px;
+  overflow: clip;
+
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Currency Exchange
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="Style/General.css">
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/Animation.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Rubik+Maps&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="js-body">
+
+    <div class="header animate slideDownAndFadeIn animate--fast js-header">
+      5 EUR to USD - Euros to US Dollars 
+    </div>
+
+    <div class="convert-border animate slideRightAndFadeIn ">
+      <div class="top">
+        <input 
+          type="text" 
+          placeholder="Add Amount.." 
+          class="amount-input js-amount-input"
+        >
+        <button class="js-convert-button">CONVERT</button>
+        <div class="currency-symbol js-currency-symbol">
+          &pound;
+        </div>
+      </div>
+      <div class="middle">
+        <div class="middle-left">
+          <label for="fromCurrency-disable">From</label>
+          <div class="input-container">
+            <input 
+              type="text" 
+              id="fromCurrency" 
+              placeholder="Type to search..." 
+              spellcheck="false" 
+              autocomplete="off" 
+              role="combobox" 
+              aria-haspopup="true" 
+              aria-expanded="false" 
+              value="" 
+            >
+            <ul class="currencies-input animate slideUpAndFadeIn animate--fastx2 js-currencies-from-input">
+              <li><img src="Flags/UnitedStates.svg">USD-<span>US Dollar</span></li>
+              <li><img src="Flags/Europe.svg">EUR-<span>Euro</span></li>
+            </ul>
+            <div class="input-container-results js-input-container-from-result">
+              <img src="Flags/UnitedStates.svg">
+              <span>USD-</span>
+              <span>US Dollar</span>
+              <img src="Icons/Down-half-tag.svg">
+            </div> 
+            <div class=input-container-results-focus>
+              <img src="ICons/X-icon.svg">
+            </div>
+          </div>
+        </div>
+
+        <div class="middle-right">
+          <label for="toCurrency-disable">to</label>
+          <div class="input-container">
+            <input 
+              class="js-test"
+              type="text" 
+              id="toCurrency" 
+              placeholder="Type to search..." 
+              spellcheck="false" 
+              autocomplete="off" 
+              role="combobox" 
+              aria-haspopup="true" 
+              aria-expanded="false" 
+              value="" 
+            >
+            <ul class="currencies-input animate slideUpAndFadeIn animate--fastx2 js-currencies-to-input">
+              <li><img src="Flags/UnitedStates.svg">USD-<span>US Dollar</span></li>
+              <li><img src="Flags/Europe.svg">EUR-<span>Euro</span></li>
+            </ul>
+            <div class="input-container-results js-input-container-to-result">
+              <img src="Flags/Europe.svg">
+              <span>EUR-</span>
+              <span>Euro</span>
+              <img src="Icons/Down-half-tag.svg">
+            </div>
+            <div class=input-container-results-focus>
+              <img src="ICons/X-icon.svg">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="bottom">
+      </div>
+    </div>
+
+    <div class="convert-results animate slideUpAndFadeIn animate--fast js-convert-results">
+      <p>
+        1.00 Euro =
+      </p>
+      <h2>
+        212.433 Brutish Pounds
+      </h2>
+      <p>
+        1 GBP = 1.16445 EUR
+      </p>
+    </div>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

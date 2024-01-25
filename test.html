@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Hide the default arrow for the input */
+    input::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+
+    /* Custom styling for the dropdown container */
+    .custom-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Style for the input */
+    .custom-dropdown input {
+      padding: 10px;
+      width: 200px;
+    }
+
+    /* Style for the dropdown list */
+    .custom-dropdown ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: none; /* Initially hidden */
+    }
+
+    /* Style for each list item */
+    .custom-dropdown li {
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Show the dropdown list on input focus */
+    .custom-dropdown input:focus + ul {
+      display: block;
+    }
+
+    /* Add an icon to each list item */
+    .custom-dropdown li img {
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="custom-dropdown">
+    <input type="text" placeholder="Select an option">
+    <ul>
+      <li><img src="icons/pause.svg" alt="Icon 1"> Option 1</li>
+      <li><img src="path/to/icon2.png" alt="Icon 2"> Option 2</li>
+      <!-- Add more options as needed -->
+    </ul>
+  </div>
+
+</body>
+</html>

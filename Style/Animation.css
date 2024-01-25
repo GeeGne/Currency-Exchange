@@ -1,0 +1,76 @@
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: none;
+}
+
+.animate.animate--fast {
+  animation-duration: 0.75s;
+}
+
+.animate.animate--fastx2 {
+  animation-duration: 0.25s;
+}
+
+.animate.animate--reverse {
+  animation-direction: reverse;
+}
+
+.animate.animate--delay-05s {
+  animation-delay: 0.5s;
+}
+
+.animate.animate--delay-1s {
+  animation-delay: 1s;
+}
+
+@keyframes slideDownAndFadeIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpAndFadeIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRightAndFadeIn {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slideDownAndFadeIn {
+  animation-name: slideDownAndFadeIn;
+  animation-timing-function: ease-in;
+
+}
+
+.slideUpAndFadeIn {
+  animation-name: slideUpAndFadeIn;
+  animation-timing-function: ease-out;
+}
+
+.slideRightAndFadeIn {
+  animation-name: slideRightAndFadeIn;
+  animation-timing-function: ease-in;
+}
