@@ -19,7 +19,7 @@ body {
   height: 100svh;
   height: -webkit-fill-available;
   width: 100svw;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8c0080), to(#ff0080fb)), url('/Icons/Currency wallpaper.webp');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8c0080), to(#ff0080fb)), url('../Icons/Currency wallpaper.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
